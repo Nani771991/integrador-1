@@ -16,12 +16,12 @@
                 list-style: none;
                 a {
                     text-decoration: none;
-                    color: $light-secondary-color;
+                    color: $black-color;
                     &:hover {
-                        color: $strong-primary-color;
+                        color: $black-color;
                     };
                     &:visited{
-                        color: $light-primary-color;
+                        color: $black-color;
                     }
                 }
             }

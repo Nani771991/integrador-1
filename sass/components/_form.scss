@@ -1,6 +1,7 @@
 
 .form__container {
     .form__label {
+        display: block;
         &[required] {
             &::after {
                 content: " (*)";
@@ -16,10 +17,24 @@
         border-radius: 0.5rem;
         padding: 0.5rem;
         width: calc(100% - 1.25rem);
+        &[type="checkbox"] {
+            display: flex;
+            width: 2rem;
+            margin-top: 0;
+        }
+        &.with-error {
+            border-color: $danger-color;
+        }
         &:focus-visible {
             outline-color: $strong-secondary-color;
         }
     };
+
+    .form__error {
+        color: $danger-color;
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
     .form__submit {
         width: 100%;
         display: flex;
