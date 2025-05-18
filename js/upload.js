@@ -71,5 +71,6 @@ const uploadSubmit = (event) => {
 
     if (isValid) {
         console.log(values)
+        alert("Mensaje enviado correctamente")
     }
 }
